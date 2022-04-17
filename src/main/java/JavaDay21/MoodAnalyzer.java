@@ -1,17 +1,25 @@
 package JavaDay21;
 
 public class MoodAnalyzer {
-	//public class Mood_analyser_Main {
-
-		public String analyseMood(String msg) {
-			if(msg.contains(("sad"))) {
-				return "SAD";
-			}
-			else {
-				return "HAPPY";
-				
-			}
-		}
+	private String msg;
+	
+	 public MoodAnalyzer(String msg) {
+	        this.msg = msg;
+	    }
+public String analyMood() {
+	try {
+        if (msg.contains("sad")) 
+        {
+            return "SAD";
+        }
+        else 
+        {
+            return "HAPPY";
+         }
+    } catch(Exception M) {
+        return "HAPPY";
 	}
+}
+}
 
-
+   
